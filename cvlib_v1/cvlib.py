@@ -1,3 +1,6 @@
+# 20200396
+# Mod. cvlib v1
+
 import cv2 as cv
 import matplotlib.pyplot as plt
 

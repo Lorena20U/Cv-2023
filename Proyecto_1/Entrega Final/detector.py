@@ -12,7 +12,7 @@ plt.style.use('dark_background')
 
 import joblib
 # Carga del modelo entrenado
-modelo_cargado = joblib.load('modelo_entrenado.pkl')
+modelo_cargado = joblib.load('modelo_entrenado_s.pkl')
 
 # Carga de las funciones del modulo plot
 def imgnorm(img):
@@ -309,7 +309,7 @@ def detect_component(result_placa):
         if area >= valor_maximo:
             if h > w:
                 if h > valor_min_h and h < valor_max_h:
-                    letra = imgray[y:y+h, x:x+w]
+                    letra = img_bin[y:y+h, x:x+w]
                     letras.append(letra)
                     x_letras.append(x)
                     y_letras.append(y)
